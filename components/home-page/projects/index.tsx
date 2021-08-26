@@ -4,6 +4,14 @@ import Header from "../../layout/header";
 import { AnimateSharedLayout } from "framer-motion";
 import { MotionBox } from "../../ui/motion";
 
+interface project{
+  title: string;
+  description: string;
+  cover:string;
+  url:string;
+  technologies: string[];
+}
+
 interface ProjectsProps {
   projects: project[];
 }
