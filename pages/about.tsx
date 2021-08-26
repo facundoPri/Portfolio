@@ -18,7 +18,6 @@ import {
   CardTransition
 } from "components/ui/page-transitions";
 import { MotionBox } from "components/ui/motion";
-import { companies, institutes } from "data/data";
 import Header from "components/layout/header";
 import PageLayout from "components/layout/pageLayout";
 

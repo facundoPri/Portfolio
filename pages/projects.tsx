@@ -11,7 +11,6 @@ import { PageSlideFade } from "components/ui/page-transitions";
 import Header from "components/layout/header";
 import { RiSignalTowerLine, RiWifiOffLine } from "react-icons/ri";
 import OfflineData from "components/project/offline-data";
-import LiveData from "components/project/live-data";
 import { repositories } from "data/repositories";
 import useSound from "use-sound";
 import PageLayout from "components/layout/pageLayout";
