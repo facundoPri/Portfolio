@@ -21,6 +21,7 @@ const ANIMATION_DURATION = 0.5;
 const ORANGE = "#ff9400";
 
 const UserIcon = "https://avatars.githubusercontent.com/u/59069780?v=4"
+const urlMial = "mailto:facundo.prieto321@gmail.com"
 
 interface HomeProps {
   projects: project[];
@@ -49,7 +50,7 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
         >
           <Avatar
             size={"2xl"}
-           src={UserIcon}
+            src={UserIcon}
           />
         </MotionBox>
         <MotionFlex
@@ -85,7 +86,15 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
               Full Stack Web Developer.
             </Box>{" "}
           </Box>
-          <Button my="4" maxW="36" leftIcon={<FiMail/>} colorScheme="teal">Contact me</Button>
+          <Button 
+            as={Link}
+            isExternal
+            href={urlMial}
+            my="4"
+            maxW="36"
+            leftIcon={<FiMail />}
+            colorScheme="teal"
+          >Contact me</Button>
         </MotionFlex>
       </Flex>
       <MotionBox
