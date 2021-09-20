@@ -53,7 +53,11 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleClick = () => {
-    onOpen();
+    if (live) {
+      window.open(live);
+    } else {
+      onOpen();
+    }
     // window.open(link);
     // if (type == "link" || type == "article") {
     //   window.open(link);

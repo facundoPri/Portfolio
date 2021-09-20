@@ -57,6 +57,14 @@ https://github.com/facundoPri/carousel-animated-react-native
 
 export const repositories = [
   {
+    title: "Hacker News",
+    description: "Small responsive web application, made with Nextjs and the HackersNews public API ",
+    cover: '/assets/images/repositories/portfolio/Hacker_news/Hacker_news.png',
+    technologies: ["react", "nextjs", "typescript"],
+    url: "https://github.com/facundoPri/hacker-news-frontend-challenge",
+    live: "https://hacker-news-frontend-challenge.netlify.app/"
+  },
+  {
     title: "Nextjs Simple Blog",
     description: "Simple Blog made with Nextjs, to learn more about Server-Side Rendering and Static Generation",
     cover: '/assets/images/repositories/portfolio/Nextjs_blog_lesson/Nextjs_blog_lesson1.png',
