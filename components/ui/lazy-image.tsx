@@ -22,7 +22,7 @@ const LazyImage = (props: LazyImageProps) => {
       {(src, loading) => {
         return loading ? (
           <BlurhashCanvas
-            hash={blurHash || "LEHV6nWB2yk8pyo0adR*.7kCMdnj"}
+            hash={blurHash || "U2Mj?o~qfQ~q~qj[fQj[fQfQfQfQ~qj[fQj["}
             width={width}
             height={height}
             punch={1}

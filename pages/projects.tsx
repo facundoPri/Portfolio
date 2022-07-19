@@ -3,25 +3,15 @@ import {
   VStack,
   Text,
   useColorModeValue,
-  HStack,
-  IconButton,
-  Tooltip
 } from "@chakra-ui/react";
 import { PageSlideFade } from "components/ui/page-transitions";
 import Header from "components/layout/header";
-import { RiSignalTowerLine, RiWifiOffLine } from "react-icons/ri";
 import OfflineData from "components/project/offline-data";
 import { repositories } from "data/repositories";
-import useSound from "use-sound";
 import PageLayout from "components/layout/pageLayout";
 
 const TURQUOISE = "#06b6d4";
 
-const iconProps = {
-  variant: "ghost",
-  size: "md",
-  isRound: true
-};
 
 const RepositoriesList = ({ repositories }) => {
   return (

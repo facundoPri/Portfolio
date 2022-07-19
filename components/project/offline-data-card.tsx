@@ -41,14 +41,12 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   const {
     key,
     title,
-    description,
     cover,
     blurHash,
     technologies,
     url,
     live,
     stars,
-    fork,
   } = props;
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -137,22 +135,34 @@ const RepositoryCard = (props: RepositoryCardProps) => {
 
           <VStack py={2} px={[2, 4]} spacing={1} align="start" w="100%">
             <Flex justifyContent={"space-between"} width="100%">
-              <Tooltip hasArrow label="Github link" placement="top">
+              {url ? (
+                <Tooltip hasArrow label="Github link" placement="top">
+                  <HStack>
+                    <Icon as={FiGithub} boxSize="0.9em" mt={"1px"} />
+                    {/* <Link href={url} isExternal> */}
+                    <Text
+                      fontSize="sm"
+                      noOfLines={1}
+                      fontWeight="600"
+                      align="left"
+                      onClick={e => handleLinkClick(e, url)}
+                    >
+                      {title}
+                    </Text>
+                  </HStack>
+                </Tooltip>
+              ) : (
                 <HStack>
-                  <Icon as={FiGithub} boxSize="0.9em" mt={"1px"} />
-                  {/* <Link href={url} isExternal> */}
                   <Text
                     fontSize="sm"
                     noOfLines={1}
                     fontWeight="600"
                     align="left"
-                    onClick={e => handleLinkClick(e, url)}
                   >
                     {title}
                   </Text>
                 </HStack>
-              </Tooltip>
-              {/* </Link> */}
+              )}
               <Flex>
                 <Icon as={AiOutlineStar} boxSize="0.9em" mt={"1px"} />
                 <Box as="span" ml="1" fontSize="sm">
@@ -173,36 +183,14 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                 </HStack>
               </Box>
             </Flex>
-            {/* <Flex justifyContent={"space-between"} width="100%">
-              <Flex>
-                <AiOutlineStar color="teal.300" />
-                <Box as="span" ml="1" fontSize="sm">
-                  {stars}
-                </Box>
-              </Flex>
-              <Box >
-              <Text
-                fontSize="xs"
-                fontWeight="400"
-                color={useColorModeValue("gray.400", "gray.500")}
-              >
-                {created}
-              </Text>
-            </Box>
-            </Flex> */}
           </VStack>
         </VStack>
         <Modal isOpen={isOpen} onClose={onClose} isCentered allowPinchZoom>
           <ModalOverlay />
-          <ModalContent bg="none" maxW={"28rem"} w="auto">
+          <ModalContent bg="none" maxW={"70rem"} w="auto">
             <ModalBody p={0} rounded="lg" overflow="hidden" bg="none">
               <Center>
                 <Image src={cover} rounded="lg" />
-                {/* {type == "image" ? (
-                <Image src={cover} rounded="lg" />
-              ) : (
-                <ReactPlayer url={link} controls playing />
-              )} */}
               </Center>
             </ModalBody>
           </ModalContent>

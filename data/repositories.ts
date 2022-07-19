@@ -62,7 +62,7 @@ export const repositories = [
     cover: '/assets/images/repositories/portfolio/Hacker_news/Hacker_news.png',
     technologies: ["react", "nextjs", "typescript"],
     url: "https://github.com/facundoPri/hacker-news-frontend-challenge",
-    live: "https://hacker-news-frontend-challenge.netlify.app/"
+    live: "https://hacker-news-frontend-challenge.netlify.app/",
   },
   {
     title: "Elohunters website",
