@@ -65,6 +65,37 @@ export const repositories = [
     live: "https://hacker-news-frontend-challenge.netlify.app/"
   },
   {
+    title: "Elohunters website",
+    cover: '/assets/images/repositories/portfolio/elohunters.png',
+    technologies: ["react", "nextjs", "javascript", "strapi"],
+    live: "https://elohunters.com/"
+  },
+  {
+    title: "Evilsmurfs website",
+    cover: '/assets/images/repositories/portfolio/evilsmurfs.png',
+    technologies: ["react", "nextjs", "javascript", "strapi"],
+    live: "https://evilsmurfs.net/"
+  },
+  {
+    title: "Lol skins viewer",
+    cover: '/assets/images/repositories/portfolio/lolSkinsViewer.png  ',
+    technologies: ["react", "nextjs", "javascript"],
+    live: "https://lol-skins-viewer.vercel.app/"
+  },
+  {
+    title: "Redcarpet",
+    cover: '/assets/images/repositories/portfolio/redcarpet.png',
+    technologies: ["react", "nextjs", "javascript"],
+    live: "https://redcarpet-fiver.vercel.app/"
+  },
+
+  {
+    title: "Study planner tool",
+    cover: '/assets/images/repositories/portfolio/studyPlanner.png',
+    technologies: ["react", "nextjs", "javascript"],
+    live: "https://study-planner-six.vercel.app/"
+  },
+  {
     title: "Nextjs Simple Blog",
     description: "Simple Blog made with Nextjs, to learn more about Server-Side Rendering and Static Generation",
     cover: '/assets/images/repositories/portfolio/Nextjs_blog_lesson/Nextjs_blog_lesson1.png',
